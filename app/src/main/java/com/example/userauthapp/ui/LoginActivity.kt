@@ -51,9 +51,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         // Link para tela de cadastro
-        binding.root.findViewById<android.view.View>(R.id.toolbar)
-            ?.setOnClickListener {
-                startActivity(Intent(this, RegisterActivity::class.java))
-            }
+        binding.tvRegister.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
     }
 }
